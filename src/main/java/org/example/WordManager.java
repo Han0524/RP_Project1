@@ -15,7 +15,7 @@ public class WordManager {
             int menu = selectMenu();
 
             if(menu == 1){
-
+                wordCRUD.listAll();
             }
             else if(menu ==4){
                 wordCRUD.addItem();
