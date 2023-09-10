@@ -17,9 +17,22 @@ public class WordManager {
             if(menu == 1){
                 wordCRUD.listAll();
             }
-            else if(menu ==4){
+            else if(menu == 2){
+                wordCRUD.partList();
+            }
+            else if(menu == 3){
+                wordCRUD.searchItem();
+            }
+            else if(menu == 4){
                 wordCRUD.addItem();
             }
+            else if(menu == 5){//update
+                wordCRUD.updateItem();
+            }
+            else if(menu == 6){//delete
+                wordCRUD.deleteItem();
+            }
+
             else if(menu == 0) break;
         }
     }
