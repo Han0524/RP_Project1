@@ -36,7 +36,10 @@ public class WordManager {
             else if(menu == 7){
                 wordCRUD.saveFile();
             }
-            else if(menu == 0) break;
+            else if(menu == 0){
+                System.out.println("단어장 프로그램을 종료합니다.");
+                break;
+            }
         }
     }
 

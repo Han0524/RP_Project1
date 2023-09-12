@@ -56,7 +56,7 @@ public class WordCRUD implements ICRUD {
     public void partList() {
         ArrayList<Word> s_list = new ArrayList<>();
 
-        System.out.print("=> 검색할 단어 수준 : ");
+        System.out.print("레벨(1:초급, 2:중급, 3:고급) 선택 : ");
         int w_level = s.nextInt();
 
         int j = 0;
