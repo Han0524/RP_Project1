@@ -26,11 +26,11 @@
 <img width="262" alt="저장_전" src="https://github.com/Han0524/RP_Project1/assets/130240820/fd814214-9ac6-4420-a35e-aadf3437e6ba">
 
 ### 저장 과정
-<img width="330" alt="저장과정" src="https://github.com/Han0524/RP_Project1/assets/130240820/323e1a75-ef
+<img width="330" alt="저장과정" src="https://github.com/Han0524/RP_Project1/assets/130240820/323e1a75-ef44-470c-b9e2-ee76d7ad3df4">
 
 ### 저장 후
 <img width="258" alt="저장_후" src="https://github.com/Han0524/RP_Project1/assets/130240820/93e2945d-a9bf-4155-97c2-788afe907d9d">
-44-470c-b9e2-ee76d7ad3df4">
+
 
 ## 데이터 파일 읽기 실행화면
 <img width="441" alt="load" src="https://github.com/Han0524/RP_Project1/assets/130240820/39d8f8b7-3ef9-4ebf-85e3-ce1711277355">
