@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfc1e070-5de2-45dd-8b22-db21a88d094b" name="Changes" comment="Complete READ function">
+    <list default="true" id="bfc1e070-5de2-45dd-8b22-db21a88d094b" name="Changes" comment="Complete menu2,3,5,6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Word.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" afterDir="false" />
     </list>
@@ -68,7 +68,9 @@
       <workItem from="1694000746425" duration="2819000" />
       <workItem from="1694007712020" duration="635000" />
       <workItem from="1694135308251" duration="3059000" />
-      <workItem from="1694329313050" duration="1390000" />
+      <workItem from="1694329313050" duration="3326000" />
+      <workItem from="1694420774917" duration="2453000" />
+      <workItem from="1694423246608" duration="102000" />
     </task>
     <task id="LOCAL-00001" summary="Make Project1 and Initially Commit">
       <created>1693879809375</created>
@@ -91,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694002305275</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Complete menu2,3,5,6">
+      <created>1694331593967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694331593967</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +110,7 @@
     <MESSAGE value="Make Project1 and Initially Commit" />
     <MESSAGE value="Complete Create function" />
     <MESSAGE value="Complete READ function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete READ function" />
+    <MESSAGE value="Complete menu2,3,5,6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete menu2,3,5,6" />
   </component>
 </project>

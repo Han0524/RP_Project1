@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -145,7 +146,7 @@ public class WordCRUD implements ICRUD {
         int number = s.nextInt();
         s.nextLine();//버퍼 비우기
 
-        System.out.print("=> 정말로 삭제하실래요?(Y/n) : ");
+        System.out.print("=> 정말로 삭제하시겠습니까?(Y/n) : ");
         String ask = s.nextLine();
 
         if(ask.toLowerCase().equals("y")){
@@ -157,5 +158,45 @@ public class WordCRUD implements ICRUD {
         }
 
 
+    }
+
+    public void saveFile() {
+        try {
+            PrintWriter pr = new PrintWriter(new FileWriter("Dictionary.txt"));
+
+            for(Word one : w_list){
+                pr.write(one.toFileString() + "\n");
+            }
+
+            System.out.println("==> 데이터 저장 완료");
+            pr.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void loadFile() {
+        try {
+            BufferedReader wr = new BufferedReader(new FileReader("Dictionary.txt"));
+            String sen;
+            int count = 0;
+
+            while((sen = wr.readLine()) != null){
+                String data[] = sen.split("\\|");
+                int level = Integer.parseInt(data[0]);
+                String word = data[1];
+                String meaning = data[2];
+
+                w_list.add(new Word(0, level,word,meaning));
+                count++;
+            }
+
+            System.out.println(count+"개의 데이터 로딩 완료");
+            wr.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
