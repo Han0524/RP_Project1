@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfc1e070-5de2-45dd-8b22-db21a88d094b" name="Changes" comment="Modify menu2, menu3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" afterDir="false" />
+    <list default="true" id="bfc1e070-5de2-45dd-8b22-db21a88d094b" name="Changes" comment="Complete DB connection(SQLite)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
       <workItem from="1694480777458" duration="4321000" />
       <workItem from="1694502064552" duration="1044000" />
       <workItem from="1694740247322" duration="1759000" />
-      <workItem from="1694850934477" duration="900000" />
+      <workItem from="1694850934477" duration="998000" />
     </task>
     <task id="LOCAL-00001" summary="Make Project1 and Initially Commit">
       <created>1693879809375</created>
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694483352256</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Complete DB connection(SQLite)">
+      <created>1694851863889</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694851863889</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +139,7 @@
     <MESSAGE value="Complete menu2,3,5,6" />
     <MESSAGE value="Complete loadFile, saveFile function" />
     <MESSAGE value="Modify menu2, menu3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify menu2, menu3" />
+    <MESSAGE value="Complete DB connection(SQLite)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete DB connection(SQLite)" />
   </component>
 </project>
