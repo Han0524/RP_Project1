@@ -1,15 +1,44 @@
 package org.example;
 
 import java.io.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WordCRUD implements ICRUD {
     Scanner s = new Scanner(System.in);
     ArrayList<Word> w_list;
+    Connection conn;
 
     public WordCRUD(){
         w_list = new ArrayList<>();
+        conn = DBConnection.getConnection();
+    }
+
+    public void loadData(){
+
+        w_list.clear();
+
+        String selectAll = "select * from dictionary";
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(selectAll);
+            while(true){
+                if(!rs.next()) break;
+                int id = rs.getInt("id");
+                int level = rs.getInt("level");
+                String word = rs.getString("word");
+                String meaning = rs.getString("meaning");
+                w_list.add(new Word(id, level, word, meaning));
+            }
+            rs.close();
+            stmt.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -46,6 +75,7 @@ public class WordCRUD implements ICRUD {
     }
 
     public void listAll() {
+        loadData();
         System.out.println("--------------------------------");
         for(int i = 0; i < w_list.size(); i++){
             System.out.print((i+1) + " ");
@@ -175,7 +205,7 @@ public class WordCRUD implements ICRUD {
         }
     }
 
-    public void loadFile() {
+    /*public void loadFile() {
         try {
             BufferedReader wr = new BufferedReader(new FileReader("Dictionary.txt"));
             String sen;
@@ -198,5 +228,5 @@ public class WordCRUD implements ICRUD {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
+    }*/
 }
